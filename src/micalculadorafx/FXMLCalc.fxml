@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="382.0" prefWidth="242.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="micalculadorafx.FXMLCalcController">
+   <children>
+      <FlowPane prefHeight="382.0" prefWidth="254.0">
+         <children>
+            <Pane nodeOrientation="RIGHT_TO_LEFT" prefHeight="52.0" prefWidth="251.0" style="-fx-background-color: #0D078F; -fx-background-radius: 50px;">
+               <children>
+                  <Label fx:id="pantalla" layoutX="3.0" layoutY="-18.0" prefHeight="93.0" prefWidth="251.0" textFill="#0ad2fff9">
+                     <font>
+                        <Font name="Impact" size="30.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <Blend mode="LIGHTEN" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+               <FlowPane.margin>
+                  <Insets top="5.0" />
+               </FlowPane.margin>
+            </Pane>
+         </children>
+      </FlowPane>
+      <Pane fx:id="borrarUno" layoutX="-1.0" layoutY="62.0" prefHeight="331.0" prefWidth="254.0" style="-fx-background-color: #808080;">
+         <children>
+            <Button fx:id="num7" layoutX="14.0" layoutY="91.0" mnemonicParsing="false" onAction="#action7" prefHeight="51.0" prefWidth="51.0" style="-fx-background-color: #C0C0C0;" text="7">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="num8" layoutX="70.0" layoutY="91.0" mnemonicParsing="false" onAction="#action8" prefHeight="51.0" prefWidth="51.0" style="-fx-background-color: #C0C0C0;" text="8">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="num9" layoutX="126.0" layoutY="91.0" mnemonicParsing="false" onAction="#action9" prefHeight="51.0" prefWidth="51.0" style="-fx-background-color: #C0C0C0;" text="9">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="num4" layoutX="14.0" layoutY="148.0" mnemonicParsing="false" onAction="#action4" prefHeight="51.0" prefWidth="51.0" style="-fx-background-color: #C0C0C0;" text="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="num5" layoutX="70.0" layoutY="149.0" mnemonicParsing="false" onAction="#action5" prefHeight="51.0" prefWidth="51.0" style="-fx-background-color: #C0C0C0;" text="5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="num6" layoutX="126.0" layoutY="149.0" mnemonicParsing="false" onAction="#action6" prefHeight="51.0" prefWidth="51.0" style="-fx-background-color: #C0C0C0;" text="6">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="num1" layoutX="14.0" layoutY="208.0" mnemonicParsing="false" onAction="#action1" prefHeight="51.0" prefWidth="51.0" style="-fx-background-color: #C0C0C0;" text="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="num2" layoutX="70.0" layoutY="208.0" mnemonicParsing="false" onAction="#action2" prefHeight="51.0" prefWidth="51.0" style="-fx-background-color: #C0C0C0;" text="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="num3" layoutX="126.0" layoutY="208.0" mnemonicParsing="false" onAction="#action3" prefHeight="51.0" prefWidth="51.0" style="-fx-background-color: #C0C0C0;" text="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="num0" layoutX="12.0" layoutY="267.0" mnemonicParsing="false" onAction="#action0" prefHeight="51.0" prefWidth="107.0" style="-fx-background-color: #C0C0C0;" text="0">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="borrarTodo" layoutX="14.0" layoutY="24.0" mnemonicParsing="false" onAction="#borrarTodo" prefHeight="51.0" prefWidth="51.0" style="-fx-background-color: #FF0000;" text="c">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="dividir" layoutX="70.0" layoutY="24.0" mnemonicParsing="false" onAction="#dividir" prefHeight="51.0" prefWidth="51.0" style="-fx-background-color: #000000;" text="/" textFill="#fff8f8">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="multiplicar" layoutX="126.0" layoutY="24.0" mnemonicParsing="false" onAction="#multiplicar" prefHeight="51.0" prefWidth="51.0" style="-fx-background-color: #000000;" text="*" textFill="#fff8f8">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="restar" layoutX="187.0" layoutY="91.0" mnemonicParsing="false" onAction="#restar" prefHeight="51.0" prefWidth="51.0" style="-fx-background-color: #000000;" text="-" textFill="#fffefe">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="resultado" layoutX="187.0" layoutY="208.0" mnemonicParsing="false" onAction="#igual" prefHeight="111.0" prefWidth="51.0" style="-fx-background-color: #000000;" text="=" textFill="#fffefe">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="sumar" layoutX="187.0" layoutY="148.0" mnemonicParsing="false" onAction="#sumar" prefHeight="51.0" prefWidth="51.0" style="-fx-background-color: #000000;" text="+" textFill="#fffefe">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="borrar1" layoutX="187.0" layoutY="24.0" mnemonicParsing="false" onAction="#borrar1" prefHeight="51.0" prefWidth="51.0" style="-fx-background-color: #000000;" text="←" textFill="#fffefe">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="punto" layoutX="126.0" layoutY="267.0" mnemonicParsing="false" onAction="#punto" prefHeight="51.0" prefWidth="51.0" style="-fx-background-color: #C0C0C0;" text=".">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
